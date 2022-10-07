@@ -18,7 +18,7 @@ function PlayBar() {
          open={song.playing}
          sx={{'*':{color:'white !important'}}}        
         >
-        <Stack component='div' sx={{background:`url('${song.background}')`}} flexDirection='column' className='bg-[rgba(0,0,0,0.5)] bg-blend-multiply bg-cover bg-center p-3 shadow-lg rounded-md items-center space-y-3'>
+        <Stack component='div' sx={{background:`url('${song.background}')`}} flexDirection='column' className='!bg-[rgba(0,0,0,0.5)] !bg-blend-multiply !bg-cover !bg-center p-3 shadow-lg rounded-md items-center space-y-3'>
             <Stack flexDirection='row' alignItems='center' width='100%' className='space-x-4'>
             <Avatar src={song.background}></Avatar>
             <Typography flexGrow={1} fontWeight={700} variant="h6" component="div">

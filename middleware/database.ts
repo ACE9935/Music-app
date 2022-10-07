@@ -1,5 +1,9 @@
 import mongoose from 'mongoose';
 import { NextApiRequest, NextApiResponse } from 'next';
+const express=require('express')
+const app=express()
+const cors=require('cors')
+app.use(cors())
 
 async function database() {
     console.log(process.env.PASSWORD)

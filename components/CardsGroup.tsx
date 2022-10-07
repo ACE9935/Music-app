@@ -9,7 +9,7 @@ import { OtherSongState } from "./SongCard";
 
 function CardsGroup() {
   const fetchSongs = async ({ pageParam = 4 }) =>{
-    const songs= await fetch(`http://localhost:3000/api/songsData?limit=${pageParam}`)
+    const songs= await fetch(`/api/songsData?limit=${pageParam}`)
     .then(data=>data.json())
     .catch(e=>{throw e})
 

@@ -13,7 +13,7 @@ function PlayBar() {
   const dispatch=useAppDispatch()
   
     return ( 
-       <Draggable onDrag={(e)=>{e.target.style.cursor='pointer'}} onStop={(e)=>{e.target.style.cursor='initial'}}>
+       <Draggable onDrag={(e:any)=>{e.target.style.cursor='pointer'}} onStop={(e:any)=>{e.target.style.cursor='initial'}}>
         <Snackbar
          open={song.playing}
          sx={{'*':{color:'white !important'}}}        

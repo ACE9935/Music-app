@@ -39,7 +39,7 @@ function SideBar(props:Props) {
     <Sz {...props}>
     <StyledSideBar component='nav' disablePadding>
       <Box className='sticky top-0'>
-       <Box px={1} py={1} sx={{backgroundColor:darken(theme.palette.secondary.main,0.22)}}><Typography className='select-none text-white font-bold' variant='h5' component='h2' textAlign='center'><span className='text-black'>MISC</span> <span className='text-[2rem]'>X</span> <span className='text-lime-400'>SPOTIFY</span></Typography></Box>
+       <Box px={1} py={1} sx={{backgroundColor:darken(theme.palette.secondary.main,0.22)}}><Typography className='select-none text-white !font-bold' variant='h5' component='h2' textAlign='center'><span className='text-black'>MISC</span> <span className='text-[2rem]'>X</span> <span className='text-lime-400'>SPOTIFY</span></Typography></Box>
        <Divider/>
         <ListItemButton><ListItemIcon>
             <QueueMusic/>

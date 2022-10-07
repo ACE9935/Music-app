@@ -67,7 +67,7 @@ const Logo=({themex,sx}:LogoProps)=><Box sx={sx}>
                  height:'4px',
                  background:'white'
                 }
-                }} variant="h6" component="div" className='relative cursor-pointer text-[2rem] font-bold'>
+                }} variant="h6" component="div" className='relative cursor-pointer !text-[2rem] !font-bold'>
               Misc
             </Typography>
 </Box>

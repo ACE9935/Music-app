@@ -1,4 +1,4 @@
-import AppBar from '@mui/material/AppBar';
+import AppBar, { AppBarTypeMap } from '@mui/material/AppBar';
 import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
 import useScrollTrigger from '@mui/material/useScrollTrigger';
@@ -7,9 +7,10 @@ import { useTheme } from '@mui/material';
 import MenuIcon from '@mui/icons-material/Menu';
 import AudiotrackIcon from '@mui/icons-material/Audiotrack';
 import { Theme,IconButton,Box } from '@mui/material';
+import { OverridableComponent } from '@mui/material/OverridableComponent';
 
 interface Props {
-    children?: React.ReactNode
+    children?:  any
     handleOpenDrawer?:()=>void
   }
 

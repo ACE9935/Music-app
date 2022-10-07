@@ -18,7 +18,7 @@ function SongPlayer() {
         volume={0.5}
         src={song.url}
         autoPlay
-      style={{background:'none',boxShadow:'none',width:'20rem' }}
+      style={{background:'none',boxShadow:'none',width:'23rem' }}
       onPlay={(e) => console.log("onPlay")}
       showSkipControls={true}
       onClickNext={()=>

@@ -12,9 +12,10 @@ export default async function handler(
   res: NextApiResponse<Data | {error:unknown}>
 ) {
   const {limit}=req.query
+  
   try{
     database()
-    let songs=await Song.find().limit(limit)
+    let songs=await Song.find().limit(Number(limit))
     return res.status(200).json({ data: songs})
   }
   catch (e:unknown){

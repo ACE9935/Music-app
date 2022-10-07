@@ -27,7 +27,7 @@ export const nextSong = createAsyncThunk(
   'next/song',
   async function(indexS:number){
     try {
-    const res = await fetch(`http://localhost:3000/api/selectSong?index=${indexS}`);
+    const res = await fetch(`/api/selectSong?index=${indexS}`);
     return await res.json();
     }
     catch (err) {
